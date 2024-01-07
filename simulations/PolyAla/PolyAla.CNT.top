@@ -1,0 +1,21 @@
+ ; The force field files to be included
+        #include "./charmm36-feb2021.ff/forcefield.itp"
+
+        #include "./charmm36-feb2021.ff/ions.itp"
+
+
+        #include "./CNT.itp"
+        #include "./PolyAla.itp"
+
+        ; Include TIP3P water topology
+        #include "./charmm36-feb2021.ff/tip3p.itp"
+
+        [ system ]
+        CNT in water
+
+        [ molecules ]
+        ;molecule name   nr.
+        Protein        1
+        CNT            1
+
+SOL              1818
